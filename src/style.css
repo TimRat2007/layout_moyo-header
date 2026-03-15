@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   margin: 0;
@@ -11,7 +11,7 @@ body {
   --header-height: 60px;
 }
 
-header {
+.header-site {
   display: flex;
   align-items: center;
 }
@@ -21,7 +21,7 @@ header {
   margin-right: 50px;
 }
 
-a {
+.nav-link {
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
@@ -34,7 +34,7 @@ a {
   margin: 0;
 }
 
-.nav_list a {
+.nav_list .nav-link {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
@@ -54,22 +54,21 @@ a {
 
 .logo {
   margin-left: 50px;
-  align-self: center;
 }
 
-.nav_items a {
+.nav_items .nav-link {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.nav_list a.is-active {
+.nav_list .nav-link.is-active {
   color: var(--blue);
   position: relative;
 }
 
-.nav_list a.is-active::after {
+.nav_list .nav-link.is-active::after {
   content: '';
   position: absolute;
   left: 0;
@@ -80,6 +79,6 @@ a {
   border-radius: 8px;
 }
 
-.nav_items a:hover {
+.nav_items .nav-link:hover {
   color: var(--blue);
 }
